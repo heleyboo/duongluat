@@ -1,0 +1,12 @@
+[25-Sep-2020 17:48:08] NOTICE: fpm is running, pid 7132
+[25-Sep-2020 17:48:08] NOTICE: ready to handle connections
+[25-Sep-2020 17:56:38] ERROR: Another FPM instance seems to already listen on /home/hvan/.config/Local/run/554sfDAR7/php/php-fpm.socket
+[25-Sep-2020 17:56:38] ERROR: FPM initialization failed
+[25-Sep-2020 17:56:39] ERROR: Another FPM instance seems to already listen on /home/hvan/.config/Local/run/554sfDAR7/php/php-fpm.socket
+[25-Sep-2020 17:56:39] ERROR: FPM initialization failed
+[25-Sep-2020 17:56:39] ERROR: Another FPM instance seems to already listen on /home/hvan/.config/Local/run/554sfDAR7/php/php-fpm.socket
+[25-Sep-2020 17:56:39] ERROR: FPM initialization failed
+[25-Sep-2020 17:56:40] ERROR: Another FPM instance seems to already listen on /home/hvan/.config/Local/run/554sfDAR7/php/php-fpm.socket
+[25-Sep-2020 17:56:40] ERROR: FPM initialization failed
+[28-Sep-2020 10:04:19] NOTICE: fpm is running, pid 6801
+[28-Sep-2020 10:04:19] NOTICE: ready to handle connections
