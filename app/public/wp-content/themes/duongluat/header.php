@@ -74,15 +74,15 @@ if( $backgroundPattern ) {
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <?php
-                            if (has_nav_menu('main-menu')) {
-                                wp_nav_menu( array(
-                                    'container' => 'ul',
-                                    'menu_class' => 'navbar-nav mr-auto',
-                                    'theme_location' => 'main-menu',
-                                    'depth' => 2,
-                                    'walker' => new CustomMenuWalker(),
-                                ) );
-                            }
+                                if (has_nav_menu('main-menu')) {
+                                    wp_nav_menu( array(
+                                        'container' => 'ul',
+                                        'menu_class' => 'navbar-nav mr-auto',
+                                        'theme_location' => 'main-menu',
+                                        'depth' => 2,
+                                        'walker' => new CustomMenuWalker(),
+                                    ) );
+                                }
                             ?>
                         </div>
                     </nav>

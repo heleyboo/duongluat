@@ -19,28 +19,23 @@ $footer_one  = str_replace( $footer_vars , $footer_val , $func( 'footer_one' ));
     <div class="container">
         <div class="footer-widgets">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="content">
-                        <h3>CONTACT INFO</h3>
-                        <div class="infor-list"><strong>SBS Consulting Pte Ltd</strong>
-                            <p class="addr">High Street Centre, #18-03, 1 North Bridge Road, Singapore</p>
-                            <p class="phone">Phone: <strong>+65-6536 0036</strong></p>
-                            <p class="email">Email: <strong>info@sbsgroup.com.sg</strong></p>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    if ( is_active_sidebar( 'homepage-footer-block' ) ) {
+                        dynamic_sidebar( 'homepage-footer-block' );
+                    }
+                ?>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="content">
                         <h3>Menu</h3>
-                        <ul class="list">
-                            <li><a class="item" href="#!">Home</a></li>
-                            <li><a class="item" href="#!">Why Vietname</a></li>
-                            <li><a class="item" href="#!">One-Stop Services</a></li>
-                            <li><a class="item" href="#!">Fees</a></li>
-                            <li><a class="item" href="#!">Business Matching</a></li>
-                            <li><a class="item" href="#!">Community</a></li>
-                            <li><a class="item" href="#!">Contact</a></li>
-                        </ul>
+                        <?php
+                            if (has_nav_menu('footer-menu')) {
+                                wp_nav_menu( array(
+                                    'container' => 'ul',
+                                    'menu_class' => 'list',
+                                    'theme_location' => 'footer-menu',
+                                ) );
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 ml-auto">
@@ -63,11 +58,16 @@ $footer_one  = str_replace( $footer_vars , $footer_val , $func( 'footer_one' ));
 <div class="footer-detail">
     <div class="container">
         <div class="count-user">
-            <div class="dot"></div><span>200 người truy cập</span>
+            <div class="dot"></div><span><?php echo 500 + rand(150, 180); ?> người truy cập</span>
         </div>
         <div class="term">
-            <p>Copyright © 2020 Duong luat</p>
-            <div class="term-list"><a class="item" href="#!">Privacy Policy</a><a class="item" href="#!">Terms of Use</a><a class="item" href="#!">Sitemap</a><a class="item" href="#!">Feeds</a></div>
+            <p>Copyright © 2020 Duong Luat</p>
+            <div class="term-list">
+                <a class="item" href="#!">Privacy Policy</a>
+                <a class="item" href="#!">Terms of Use</a>
+                <a class="item" href="#!">Sitemap</a>
+                <a class="item" href="#!">Feeds</a>
+            </div>
         </div>
     </div>
 </div>

@@ -63,15 +63,10 @@ if ( ! function_exists( 'duongluat_setup' ) ) :
 
         register_nav_menus(
             array(
-                'footer-menu-1' => esc_html__( 'Footer menu 1', 'duongluat' ),
+                'footer-menu' => esc_html__( 'Footer menu 1', 'duongluat' ),
             )
         );
 
-        register_nav_menus(
-            array(
-                'footer-menu-2' => esc_html__( 'Footer menu 2', 'duongluat' ),
-            )
-        );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -167,6 +162,14 @@ function duongluat_widgets_init() {
             'description'   => esc_html__( 'Home page posts.', 'duongluat' ),
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Home footer blocks', 'duongluat' ),
+            'id'            => 'homepage-footer-block',
+            'description'   => esc_html__( 'Home footer blocks', 'duongluat' ),
+        )
+    );
 }
 add_action( 'widgets_init', 'duongluat_widgets_init' );
 
@@ -192,6 +195,8 @@ require get_template_directory() . '/inc/widgets/ServicesWidget.php';
 require get_template_directory() . '/inc/widgets/HeaderInfoWidget.php';
 
 require get_template_directory() . '/inc/widgets/HomePostsWidget.php';
+
+require get_template_directory() . '/inc/widgets/ContactInfoWidget.php';
 
 /**
  * Configuration for Theme setting Plugin
