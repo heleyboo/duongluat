@@ -151,6 +151,22 @@ function duongluat_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'duongluat' ),
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Home page header', 'duongluat' ),
+            'id'            => 'homepage-header-block',
+            'description'   => esc_html__( 'Add widgets here.', 'duongluat' ),
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Home page posts', 'duongluat' ),
+            'id'            => 'homepage-post-block',
+            'description'   => esc_html__( 'Home page posts.', 'duongluat' ),
+        )
+    );
 }
 add_action( 'widgets_init', 'duongluat_widgets_init' );
 
@@ -173,6 +189,10 @@ require get_template_directory() . '/inc/widgets/VideoWidget.php';
 
 require get_template_directory() . '/inc/widgets/ServicesWidget.php';
 
+require get_template_directory() . '/inc/widgets/HeaderInfoWidget.php';
+
+require get_template_directory() . '/inc/widgets/HomePostsWidget.php';
+
 /**
  * Configuration for Theme setting Plugin
  */
@@ -182,6 +202,11 @@ require get_template_directory() . '/inc/theme-settings.php';
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom post type
+ */
+require get_template_directory() . '/inc/custom-post-type/service.php';
 
 /**
  * Custom template tags for this theme.

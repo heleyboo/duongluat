@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b1d1f49-7808-4cf0-968c-37c2623335e6" name="Default Changelist" comment="" />
+    <list default="true" id="7b1d1f49-7808-4cf0-968c-37c2623335e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/inc/widgets/ServicesWidget.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/inc/widgets/ServicesWidget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/duongluat/page-home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/php-fpm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php-fpm.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +16,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i04U2EKUw31TrroNLcy6oc6YY6" />
   <component name="ProjectViewState">
@@ -40,10 +50,23 @@
       <workItem from="1601031190766" duration="982000" />
       <workItem from="1601260832840" duration="6563000" />
       <workItem from="1601275264309" duration="1707000" />
+      <workItem from="1601867590513" duration="6553000" />
+      <workItem from="1601880052916" duration="1478000" />
+      <workItem from="1601954150891" duration="8489000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="778" y="445" width="354" height="142" key="NewPhpFileDialog" timestamp="1601867983331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="778" y="445" width="354" height="142" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1601867983331" />
+    <state x="665" y="268" width="589" height="502" key="find.popup" timestamp="1601867862267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="665" y="268" width="589" height="502" key="find.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1601867862267" />
   </component>
 </project>

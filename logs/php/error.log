@@ -1,0 +1,55 @@
+[05-Oct-2020 03:22:37 UTC] PHP Fatal error:  Cannot redeclare beautyspa_custom_header_setup() (previously declared in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/custom-header.php:19) in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/custom-header.php on line 19
+[05-Oct-2020 03:22:37 UTC] PHP Stack trace:
+[05-Oct-2020 03:22:37 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/admin-ajax.php:0
+[05-Oct-2020 03:22:37 UTC] PHP   2. require_once() /home/hvan/Local Sites/duongluat/app/public/wp-admin/admin-ajax.php:22
+[05-Oct-2020 03:22:37 UTC] PHP   3. require_once() /home/hvan/Local Sites/duongluat/app/public/wp-load.php:37
+[05-Oct-2020 03:22:37 UTC] PHP   4. require_once() /home/hvan/Local Sites/duongluat/app/public/wp-config.php:77
+[05-Oct-2020 03:22:37 UTC] PHP   5. include() /home/hvan/Local Sites/duongluat/app/public/wp-settings.php:514
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76
+[06-Oct-2020 04:29:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php on line 99
+[06-Oct-2020 04:29:03 UTC] PHP Stack trace:
+[06-Oct-2020 04:29:03 UTC] PHP   1. {main}() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:0
+[06-Oct-2020 04:29:03 UTC] PHP   2. wp_list_widgets() /home/hvan/Local Sites/duongluat/app/public/wp-admin/widgets.php:448
+[06-Oct-2020 04:29:03 UTC] PHP   3. wp_widget_control() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:60
+[06-Oct-2020 04:29:03 UTC] PHP   4. HeaderInfoWidget->form_callback() /home/hvan/Local Sites/duongluat/app/public/wp-admin/includes/widgets.php:274
+[06-Oct-2020 04:29:03 UTC] PHP   5. HeaderInfoWidget->form() /home/hvan/Local Sites/duongluat/app/public/wp-includes/class-wp-widget.php:519
+[06-Oct-2020 04:29:03 UTC] PHP   6. HeaderInfoWidget->getServicesForm() /home/hvan/Local Sites/duongluat/app/public/wp-content/themes/duongluat/inc/widgets/HeaderInfoWidget.php:76

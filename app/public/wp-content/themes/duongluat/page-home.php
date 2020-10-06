@@ -29,6 +29,11 @@ get_header();
         <div class="module-news-home">
             <div class="container">
                 <div class="row">
+                    <?php
+                        if ( is_active_sidebar( 'homepage-post-block' ) ) {
+                            dynamic_sidebar( 'homepage-post-block' );
+                        }
+                    ?>
                     <div class="market-news col-12 col-md-12 col-lg-6">
                         <h2 class="title">Market News</h2>
                         <ul class="list">

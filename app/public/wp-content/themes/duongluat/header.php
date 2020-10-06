@@ -49,14 +49,23 @@ if( $backgroundPattern ) {
             </ul>
         </div>
         <div class="header-infor">
-            <div class="logo"><img src="images/img_logo.png" alt=""></div>
-            <div class="info">
-                <h1 class="title-info">Start Your Business in Singapore Today</h1>
-                <div class="contact-group">
-                    <div class="item"><img src="https://www.sbsgroup.com.sg/wp-content/themes/Chameleon/images/message.png" alt=""><a href="mailto:duongluat@gmail.com">duongluat@gmail.com</a></div>
-                    <div class="item"><img src="https://www.sbsgroup.com.sg/wp-content/themes/Chameleon/images/contact.png" alt=""><a href="tel:123456789">123456789</a></div>
-                </div>
+            <div class="logo">
+                <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                if (has_custom_logo()) {
+                    ?>
+                    <img src="<?php echo esc_url( $image[0] )  ?>" alt="Duong Luat Logo" />
+                <?php } else { ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/img_logo.png" alt="Duong Luat Logo" />
+                <?php }
+                ?>
             </div>
+            <?php
+                if ( is_active_sidebar( 'homepage-header-block' ) ) {
+                    dynamic_sidebar( 'homepage-header-block' );
+                }
+            ?>
         </div>
         <div class="menu-area" id="menu_area">
             <div class="container">
