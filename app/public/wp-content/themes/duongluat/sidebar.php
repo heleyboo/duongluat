@@ -4,14 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package beautyspa
+ * @package duongluat
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-block' ) ) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+<div class="sidebar">
+    <div class="content-sidebar-list">
+	    <?php dynamic_sidebar( 'sidebar-block' ); ?>
+    </div>
+</div>

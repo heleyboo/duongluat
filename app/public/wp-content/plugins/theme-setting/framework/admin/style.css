@@ -177,7 +177,7 @@ input.mpanel-reset-button {
     position: relative;
     overflow: hidden;
 }
-.option-item input[type=text]{ width: 250px; height: 30px;}
+.option-item input[type=text]{ width: 450px; height: 30px;}
 .option-item input[type=text], .option-item textarea {
     padding: 3px 5px;
 }

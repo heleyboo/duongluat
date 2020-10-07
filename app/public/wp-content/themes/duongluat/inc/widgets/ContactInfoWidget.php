@@ -55,6 +55,7 @@ class ContactInfoWidget extends WP_Widget {
         $instance['email'] = sanitize_text_field( $new_instance['email'] );
         $instance['phone'] = sanitize_text_field( $new_instance['phone'] );
         $instance['address'] = sanitize_text_field( $new_instance['address'] );
+        $instance['gmap_url'] = sanitize_text_field( $new_instance['gmap_url'] );
 
         return $instance;
     }

@@ -93,4 +93,4 @@ if( $backgroundPattern ) {
     <!-- HEADER END -->
 
     <!-- CONTENT START -->
-    <div class="page-content">
+    <div class="page-content has-sidebar">

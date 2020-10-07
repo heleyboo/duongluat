@@ -13,3 +13,20 @@
 	  return false;
 	});
 })(jQuery)
+// TAB
+$(document).ready(function () {
+// $ab content
+	$(".b-tab").hide();
+	$(".b-tab:first").show();
+
+// if in tab mode
+$(".b-nav-tab").click(function(e) {
+		$(".b-tab").hide();
+		e.preventDefault();
+		var activeTab = $(this).attr("href"); 
+		$(activeTab).fadeIn();
+
+		$(".b-nav-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+});

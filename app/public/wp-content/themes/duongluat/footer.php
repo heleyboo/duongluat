@@ -61,13 +61,16 @@ $footer_one  = str_replace( $footer_vars , $footer_val , $func( 'footer_one' ));
             <div class="dot"></div><span><?php echo 500 + rand(150, 180); ?> người truy cập</span>
         </div>
         <div class="term">
-            <p>Copyright © 2020 Duong Luat</p>
-            <div class="term-list">
-                <a class="item" href="#!">Privacy Policy</a>
-                <a class="item" href="#!">Terms of Use</a>
-                <a class="item" href="#!">Sitemap</a>
-                <a class="item" href="#!">Feeds</a>
-            </div>
+            <p>Copyright © 2020 Duong luat</p>
+            <?php
+                if (has_nav_menu('footer-menu-1')) {
+                    wp_nav_menu( array(
+                        'container' => 'ul',
+                        'menu_class' => 'term-list',
+                        'theme_location' => 'footer-menu-1',
+                    ) );
+                }
+            ?>
         </div>
     </div>
 </div>

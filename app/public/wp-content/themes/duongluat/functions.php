@@ -8,7 +8,7 @@
  */
 define ('THEME_NAME',		'Duong Luat' );
 define ('THEME_FOLDER',		'duongluat' );
-define ('THEME_VER',		'5.3.0'  );	//DB Theme Version
+define ('THEME_VER',		'1.0.0'  );	//DB Theme Version
 
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -64,6 +64,12 @@ if ( ! function_exists( 'duongluat_setup' ) ) :
         register_nav_menus(
             array(
                 'footer-menu' => esc_html__( 'Footer menu 1', 'duongluat' ),
+            )
+        );
+
+        register_nav_menus(
+            array(
+                'footer-menu-1' => esc_html__( 'Footer menu 2', 'duongluat' ),
             )
         );
 
@@ -170,6 +176,14 @@ function duongluat_widgets_init() {
             'description'   => esc_html__( 'Home footer blocks', 'duongluat' ),
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Sidebar blocks', 'duongluat' ),
+            'id'            => 'sidebar-block',
+            'description'   => esc_html__( 'Sidebar blocks', 'duongluat' ),
+        )
+    );
 }
 add_action( 'widgets_init', 'duongluat_widgets_init' );
 
@@ -198,9 +212,12 @@ require get_template_directory() . '/inc/widgets/HomePostsWidget.php';
 
 require get_template_directory() . '/inc/widgets/ContactInfoWidget.php';
 
+require get_template_directory() . '/inc/widgets/SidebarPostsWidget.php';
+
 /**
  * Configuration for Theme setting Plugin
  */
+require get_template_directory() . '/inc/constants/Setting.php';
 require get_template_directory() . '/inc/theme-settings.php';
 
 /**

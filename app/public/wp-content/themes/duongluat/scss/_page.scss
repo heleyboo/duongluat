@@ -1,0 +1,26 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+/* Body */
+html{-webkit-font-smoothing:antialiased; scroll-behavior: smooth;}
+body{-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;font-display:swap;font-family: $family-sans-serif !important	;
+	@media only screen and (max-width:414px){font-size:calc(100% + 1 * (100vw - 360px)/ 39)}
+}
+body, html{height:100%;background-color:#E9F0F4;
+	@include from($tablet){height:auto}
+}
+
+/* General */
+.page-content{min-height:100%;@include margin(null auto);
+	@media(max-width:1024px){
+		@include padding(null 15px);
+	}
+	&.has-sidebar{
+		.context-page{max-width:960px;margin:null auto;display:flex;align-items:flex-start;
+			.wrap-content{max-width:720px;flex-grow:1;
+				@media only screen and (max-width:1023px){max-width:100%;}
+			}
+		}
+	}
+}
+

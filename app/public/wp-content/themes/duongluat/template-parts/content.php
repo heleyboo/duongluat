@@ -9,55 +9,21 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				beautyspa_posted_on();
-				beautyspa_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php beautyspa_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'beautyspa' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'beautyspa' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php beautyspa_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div class="module-new-detail">
+    <?php the_title( '<h1 class="title-detail">', '</h1>' ); ?>
+    <div class="wrap-content-detail">
+        <div class="heading-content">
+            <div class="info">
+                <p class="tweet"><i class="fab fa-twitter"></i><span class="text">Tweet</span></p>
+                <p class="fb"><i class="fas fa-thumbs-up"></i><span class="text">Like 10</span></p>
+                <p class="email"><i class="far fa-envelope"></i><span>Email</span></p>
+                <p class="linked"><i class="fab fa-linkedin"></i><span class="text">Share</span></p>
+            </div>
+            <div class="date-modified"> Last modified: <?php echo get_the_date(); ?></div>
+        </div>
+        <div class="body-content">
+            <?php the_content(); ?>
+            <div class="post-views"><i class="far fa-eye"></i><span>Post Views: 1,328</span></div>
+        </div>
+    </div>
+</div>
