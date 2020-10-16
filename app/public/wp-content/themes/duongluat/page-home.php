@@ -34,41 +34,6 @@ get_header();
                             dynamic_sidebar( 'homepage-post-block' );
                         }
                     ?>
-                    <div class="market-news col-12 col-md-12 col-lg-6">
-                        <h2 class="title">Market News</h2>
-                        <ul class="list">
-                            <li><a class="item" href="#!"><span class="img" style="background-image:url(https://via.placeholder.com/300"></span>
-                                    <div class="content">
-                                        <h3>Tin tức thị trường</h3><span class="date-create">08:54 | 14/09/2020</span>
-                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris …. </p><span class="cta">[More..]</span>
-                                    </div></a></li>
-                            <li><a class="item" href="#!"><span class="img" style="background-image:url(https://via.placeholder.com/360"></span>
-                                    <div class="content">
-                                        <h3>Tin tức thị trường</h3><span class="date-create">08:54 | 14/09/2020</span>
-                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris …. </p><span class="cta">[More..]</span>
-                                    </div></a></li>
-                        </ul>
-                    </div>
-                    <div class="legal-new col-12 col-md-12 col-lg-6">
-                        <h2 class="title">Legal News</h2>
-                        <ul class="list">
-                            <li><a class="item" href="#!"><span class="img" style="background-image:url(https://via.placeholder.com/300"></span>
-                                    <div class="content">
-                                        <h3>Tin tức thị trường</h3><span class="date-create">08:54 | 14/09/2020</span>
-                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris …. </p><span class="cta">[More..]</span>
-                                    </div></a></li>
-                            <li><a class="item" href="#!"><span class="img" style="background-image:url(https://via.placeholder.com/360"></span>
-                                    <div class="content">
-                                        <h3>Tin tức thị trường</h3><span class="date-create">08:54 | 14/09/2020</span>
-                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris …. </p><span class="cta">[More..]</span>
-                                    </div></a></li>
-                            <li><a class="item" href="#!"><span class="img" style="background-image:url(https://via.placeholder.com/360"></span>
-                                    <div class="content">
-                                        <h3>Tin tức thị trường</h3><span class="date-create">08:54 | 14/09/2020</span>
-                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris …. </p><span class="cta">[More..]</span>
-                                    </div></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

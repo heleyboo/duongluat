@@ -24,7 +24,10 @@ class VideoWidget extends WP_Widget {
         }
 
         $videoLink = ( ! empty( $instance['video_link'] ) ) ? $instance['video_link'] : '';
-        $postId = ( ! empty( $instance['post_id'] ) ) ? $instance['post_id'] : '';
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : '';
+        $text = ( ! empty( $instance['text'] ) ) ? $instance['text'] : '';
+        $buttonText = ( ! empty( $instance['button_text'] ) ) ? $instance['button_text'] : '';
+        $link = ( ! empty( $instance['link'] ) ) ? $instance['link'] : '';
 
         ?>
         <div class="module-introduction">
@@ -32,10 +35,12 @@ class VideoWidget extends WP_Widget {
                 <div class="row">
                     <div class="intro-media col-12 col-md-12 col-lg-5"><iframe width="100%" height="315" src="<?php echo $videoLink; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="intro-content col-12 col-md-12 col-lg-7">
-                        <h2>WE LEGAL</h2>
+                        <h2><?php echo $title; ?></h2>
                         <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris pretium massa a arcu blandit finibus. Curabitur varius dui id leo tincidunt interdum. Curabitur sagittis pretium rhoncus. In vitae blandit purus. Maecenas id leo eros. Mauris aliquam nunc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dapibus ortor in tempus. Suspendisse aliquam luctus molestie. Mauris pretium massa a arcu blandit finibus. Curabitur varius dui id leo tincidunt interdum. Curabitur sagittis pretium rhoncus. In vitae blandit purus. Maecenas id leo eros. Mauris aliquam nunc </p>
-                        </div><a class="cta" href="#!">[Call to action]</a>
+                            <p>
+                                <?php echo $text ?>
+                            </p>
+                        </div><a class="cta" href="<?php echo $link; ?>"><?php echo $buttonText; ?></a>
                     </div>
                 </div>
             </div>
@@ -48,7 +53,10 @@ class VideoWidget extends WP_Widget {
     public function update( $new_instance, $old_instance ) {
         $instance = $old_instance;
         $instance['video_link'] = sanitize_text_field( $new_instance['video_link'] );
-        $instance['post_id'] = sanitize_text_field( $new_instance['post_id'] );
+        $instance['title'] = sanitize_text_field( $new_instance['title'] );
+        $instance['text'] = sanitize_text_field( $new_instance['text'] );
+        $instance['button_text'] = sanitize_text_field( $new_instance['button_text'] );
+        $instance['link'] = sanitize_text_field( $new_instance['link'] );
         return $instance;
     }
 
@@ -56,7 +64,10 @@ class VideoWidget extends WP_Widget {
 
     public function form( $instance ) {
         $videoLink  = isset( $instance['video_link'] ) ? esc_attr( $instance['video_link'] ) : '';
-        $postId     = isset( $instance['post_id'] ) ? esc_attr( $instance['post_id'] ) : '';
+        $title  = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+        $text  = isset( $instance['text'] ) ? esc_attr( $instance['text'] ) : '';
+        $buttonText  = isset( $instance['button_text'] ) ? esc_attr( $instance['button_text'] ) : '';
+        $link     = isset( $instance['link'] ) ? esc_attr( $instance['link'] ) : '';
         ?>
 
         <p>
@@ -69,14 +80,42 @@ class VideoWidget extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo esc_attr($this->get_field_id( 'post_id' )); ?>">
-                <?php esc_html_e( 'Post Id:', 'duongluat' ); ?>
+            <label for="<?php echo esc_attr($this->get_field_id( 'link' )); ?>">
+                <?php esc_html_e( 'Link:', 'duongluat' ); ?>
             </label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'post_id' )); ?>"
-                   name="<?php echo esc_attr($this->get_field_name( 'post_id' )); ?>"
-                   type="text" value="<?php echo esc_attr($postId); ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'link' )); ?>"
+                   name="<?php echo esc_attr($this->get_field_name( 'link' )); ?>"
+                   type="text" value="<?php echo esc_attr($link); ?>" />
         </p>
 
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>">
+                <?php esc_html_e( 'Title:', 'duongluat' ); ?>
+            </label>
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"
+                   name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>"
+                   type="text" value="<?php echo esc_attr($title); ?>" />
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id( 'button_text' )); ?>">
+                <?php esc_html_e( 'Button text:', 'duongluat' ); ?>
+            </label>
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'button_text' )); ?>"
+                   name="<?php echo esc_attr($this->get_field_name( 'button_text' )); ?>"
+                   type="text" value="<?php echo esc_attr($buttonText); ?>" />
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id( 'text' )); ?>">
+                <?php esc_html_e( 'Text:', 'duongluat' ); ?>
+            </label>
+        </p>
+            <textarea
+                    class="widefat" id="<?php echo esc_attr($this->get_field_id( 'text' )); ?>"
+                    name="<?php echo esc_attr($this->get_field_name( 'text' )); ?>">
+                <?php echo stripslashes($text); ?>
+            </textarea>
         <?php
 
     }

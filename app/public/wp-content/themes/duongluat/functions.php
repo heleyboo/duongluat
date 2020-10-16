@@ -184,6 +184,14 @@ function duongluat_widgets_init() {
             'description'   => esc_html__( 'Sidebar blocks', 'duongluat' ),
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Why vietnam blocks', 'duongluat' ),
+            'id'            => 'why-vietnam-block',
+            'description'   => esc_html__( 'Why vietnam blocks', 'duongluat' ),
+        )
+    );
 }
 add_action( 'widgets_init', 'duongluat_widgets_init' );
 
@@ -214,6 +222,10 @@ require get_template_directory() . '/inc/widgets/ContactInfoWidget.php';
 
 require get_template_directory() . '/inc/widgets/SidebarPostsWidget.php';
 
+require get_template_directory() . '/inc/widgets/SidebarContactWidget.php';
+
+require get_template_directory() . '/inc/widgets/WhyVietnamPostsWidget.php';
+
 /**
  * Configuration for Theme setting Plugin
  */
@@ -229,6 +241,13 @@ require get_template_directory() . '/inc/custom-header.php';
  * Custom post type
  */
 require get_template_directory() . '/inc/custom-post-type/service.php';
+
+require get_template_directory() . '/inc/custom-post-type/faq.php';
+
+/**
+ * Short code
+ */
+require get_template_directory() . '/inc/shortcode/why-vietnam.php';
 
 /**
  * Custom template tags for this theme.
